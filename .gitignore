@@ -1,3 +1,4 @@
+.venv
 venv
 firmware/10 panto firmware/*
 !firmware/10 panto firmware/.gitkeep
