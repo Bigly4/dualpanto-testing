@@ -81,7 +81,7 @@ flowchart TD;
     
     subgraph  test_firmware
     FB[1.Basic];
-    FB -- not work --> CH(check USB connection, <br> COM port, <br> platformIO  properly installed,  <br> and pushing button back of dp)
+    FB -- not work --> CH(check USB connection, <br> not using power-only cable, <br> COM port, <br> platformIO  properly installed,  <br> and pushing button back of dp)
     
     end
     
