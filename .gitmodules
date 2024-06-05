@@ -1,4 +1,4 @@
 [submodule "firmware/dualpantoframework"]
 	path = firmware/dualpantoframework
-	url = git@github.com:HassoPlattnerInstituteHCI/dualpantoframework.git
+	url = https://github.com/HassoPlattnerInstituteHCI/dualpantoframework.git
 

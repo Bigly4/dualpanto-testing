@@ -72,9 +72,18 @@ If you properly code it, you will find a thin wall in the midle of dualpanto int
 5. take the video that you interacts with rendered wall
 6. and upload to dokuwiki project page
 
-
 ## Assignment Week8: 
-**WIP**
+1. upload the original firmware to your DualPanto, for this
+   - checkout feature/encoder-driver branch
+   - you want to have all submodules cloned (run `git submodule init`, then `git submodule update`)
+   - then copy `firmware/haptics/line wall/firmware/src/config/config.cpp` to `firmware/dualpantoframework/firmware/src/config/config.cpp`
+     and copy `firmware/haptics/line wall/firmware/include/config/config.hpp` to `firmware/dualpantoframework/firmware/ include /config/config.hpp`
+   - then change `util.compile_framework(...)` to `util.upload_framework(...)` in `UploadDualPantoFramework.test_upload_dp_firmware` in `test_firmware.py`
+   - now just as before, run `python -m unittest test_firmware.UploadDualPantoFramework`
+3. checkout master branch at https://github.com/HassoPlattnerInstituteHCI/PantoDraw-Web
+4. search for the TODO BIS and fill them in with the things you learned today
+5. run dualdraw and draw a nice picture (see readme.md for instructions)
+6. upload a video of your drawing to dokuwiki
 
 ## Uploading DualpantoFramework
 From Week9, we will develop dualpanto app. sometimes you want to upload dualpanto famework again and again when...
